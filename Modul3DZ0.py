@@ -53,7 +53,25 @@ Villager3 = Villager("Обеспечивает руководство и стр�
 
 *Сущность 'Nedoprogrammist' может использовать Artefact('Прямая рука') только один раз за ритуал. Результатом действия Artefact('Прямая рука') для сущности 'Nedoprogrammist' является: Ускорение обучения и применения навыков. Длительность: 30 минут.
 
+Задача №3. "Городской фермерский рынок"
 
+struct Stand:
+    product_type: str
 
+struct Farmer:
+    name: str,
+    age: int,
+    products_range: list
 
+struct Item:
+    name: str,
+    count: int,
+    manufacturing_date: struct
+
+struct shopper:
+    name: str,
+    age: int,
+    demography: str,
+    product_preferences: list[str],
+    cash_amount: int
 
